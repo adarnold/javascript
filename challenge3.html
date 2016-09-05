@@ -4,7 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Challenge 3</title>
     <script type="text/javascript">
-    /*    Your code here  */    
+    /*    Your code here  */  
+    function checkForm() {
+      var radios = document.getElementsByTagName('input');
+      var value;
+      for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked == true) {
+              // get value, set checked flag or do whatever you need to
+              return true;     
+          }
+          else {
+            window.alert("Please select your favorite berry!");
+            return false;
+          }
+      }
+    }  
     </script>
 </head>
 <body>

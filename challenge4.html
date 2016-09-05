@@ -4,11 +4,36 @@
 	<meta charset="UTF-8">
 	<title>Challenge 4</title>
     <style>
-    /*    Your code here  */    
+    /*    Your code here  */ 
+    .errormsg{
+      color: red;
+      text-transform: uppercase;
+      display: none;
+    }   
     </style>
     
     <script type="text/javascript">
-    /*    Your code here  */    
+    /*    Your code here  */
+    function checkForm(){
+      var nameText = document.getElementById("fullname").value;
+      var addressText = document.getElementById("streetaddr").value;
+      if(nameText=="") {
+        document.getElementById("nameerrormsg").style.display = 'block';
+      }
+      else {
+        document.getElementById("nameerrormsg").style.display = 'none';
+      }
+      if(addressText=="") {
+        document.getElementById("addrerrormsg").style.display = 'block';
+      }
+      else {
+        document.getElementById("addrerrormsg").style.display = 'none';
+      }
+      if(nameText=="" || addressText=="") {
+        return false;
+      }
+      }
+      
     </script>
 </head>
 <body>

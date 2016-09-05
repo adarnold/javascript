@@ -16,11 +16,26 @@ When you test your form at the moment, you'll notice that you can click on the c
   <head>
     <title>JavaScript Challenges</title>
     <style>
-    /*    Your code here  */    
+    /*    Your code here  */ 
+    #emailfield{
+      display: none;
+    }   
     </style>
     
     <script type="text/javascript">
-    /*    Your code here  */    
+    /*    Your code here  */  
+    function toggleEmail() {
+      // window.alert("Yep, my function is being called");
+      var checkbox = document.getElementById('subscribe');
+
+      if(checkbox.checked) {
+          document.getElementById("emailfield").style.display = 'block';
+      }
+      else
+      {
+          document.getElementById("emailfield").style.display = 'none';
+      }
+    }  
     </script>
   </head>
   <body>
